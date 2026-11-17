@@ -1,72 +1,72 @@
-﻿{
-    "actorSpecification":  1,
-    "name":  "devto-tech-articles-scraper",
-    "title":  "Dev.to Tech Articles \u0026 Author Leads Scraper",
-    "description":  "Scrape trending developer articles, tutorials, and tech authors from Dev.to by tag. Extracts author GitHub usernames, Twitter profiles, like counts, comment metrics, and article URLs.",
-    "version":  "1.0",
-    "meta":  {
-                 "templateId":  "project_empty"
-             },
-    "dockerfile":  "./Dockerfile",
-    "categories":  [
-                       "LEAD_GENERATION",
-                       "SOCIAL_MEDIA"
-                   ],
-    "storages":  {
-                     "dataset":  {
-                                     "actorSpecification":  1,
-                                     "title":  "Dev.to Articles Dataset",
-                                     "views":  {
-                                                   "overview":  {
-                                                                    "title":  "Overview",
-                                                                    "transformation":  {
-                                                                                           "fields":  [
-                                                                                                          "title",
-                                                                                                          "authorName",
-                                                                                                          "authorGithub",
-                                                                                                          "authorTwitter",
-                                                                                                          "reactionsCount",
-                                                                                                          "commentsCount",
-                                                                                                          "url",
-                                                                                                          "tags",
-                                                                                                          "publishedAt"
-                                                                                                      ]
-                                                                                       },
-                                                                    "display":  {
-                                                                                    "component":  "table",
-                                                                                    "columns":  {
-                                                                                                    "title":  {
-                                                                                                                  "label":  "Article Title"
-                                                                                                              },
-                                                                                                    "authorName":  {
-                                                                                                                       "label":  "Author"
-                                                                                                                   },
-                                                                                                    "authorGithub":  {
-                                                                                                                         "label":  "GitHub"
-                                                                                                                     },
-                                                                                                    "authorTwitter":  {
-                                                                                                                          "label":  "Twitter"
-                                                                                                                      },
-                                                                                                    "reactionsCount":  {
-                                                                                                                           "label":  "Reactions"
-                                                                                                                       },
-                                                                                                    "commentsCount":  {
-                                                                                                                          "label":  "Comments"
-                                                                                                                      },
-                                                                                                    "url":  {
-                                                                                                                "label":  "Article URL"
-                                                                                                            },
-                                                                                                    "tags":  {
-                                                                                                                 "label":  "Tags"
-                                                                                                             },
-                                                                                                    "publishedAt":  {
-                                                                                                                        "label":  "Published Date"
-                                                                                                                    }
-                                                                                                }
-                                                                                }
-                                                                }
-                                               }
-                                 }
-                 },
-    "output":  "./output_schema.json"
+{
+  "actorSpecification": 1,
+  "name": "devto-tech-articles-scraper",
+  "title": "Dev.to Tech Articles & Author Leads Scraper",
+  "description": "Scrape trending developer articles, tutorials, and tech authors from Dev.to by tag. Extracts author GitHub usernames, Twitter profiles, like counts, comment metrics, and article URLs.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "project_empty"
+  },
+  "dockerfile": "./Dockerfile",
+  "categories": [
+    "LEAD_GENERATION",
+    "SOCIAL_MEDIA"
+  ],
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Dev.to Articles Dataset",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "title",
+              "authorName",
+              "authorGithub",
+              "authorTwitter",
+              "reactionsCount",
+              "commentsCount",
+              "url",
+              "tags",
+              "publishedAt"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "columns": {
+              "title": {
+                "label": "Article Title"
+              },
+              "authorName": {
+                "label": "Author"
+              },
+              "authorGithub": {
+                "label": "GitHub"
+              },
+              "authorTwitter": {
+                "label": "Twitter"
+              },
+              "reactionsCount": {
+                "label": "Reactions"
+              },
+              "commentsCount": {
+                "label": "Comments"
+              },
+              "url": {
+                "label": "Article URL"
+              },
+              "tags": {
+                "label": "Tags"
+              },
+              "publishedAt": {
+                "label": "Published Date"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": "./output_schema.json"
 }
