@@ -1,0 +1,17 @@
+{
+  "name": "devto-tech-articles-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scrape trending developer articles, AI tutorials, and tech authors from Dev.to. Extracts author GitHub handles, Twitter profiles, reaction counts, and reading times.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "tuqiiiy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.12.2",
+    "got-scraping": "^4.0.7"
+  }
+}

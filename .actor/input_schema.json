@@ -1,0 +1,53 @@
+{
+  "title": "Dev.to Scraper Input Schema",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "tag": {
+      "title": "Topic / Tag",
+      "type": "string",
+      "description": "Filter articles by technology tag (e.g. ai, webdev, python, javascript, react, devops, career).",
+      "editor": "select",
+      "default": "ai",
+      "enum": [
+        "ai",
+        "webdev",
+        "javascript",
+        "python",
+        "react",
+        "devops",
+        "opensource",
+        "career",
+        "productivity",
+        "tutorial"
+      ],
+      "enumTitles": [
+        "Artificial Intelligence (AI)",
+        "Web Development",
+        "JavaScript",
+        "Python",
+        "React",
+        "DevOps & Cloud",
+        "Open Source",
+        "Career & Hiring",
+        "Productivity",
+        "Tutorials & Guides"
+      ]
+    },
+    "maxArticles": {
+      "title": "Max Articles",
+      "type": "integer",
+      "description": "Total number of articles to extract.",
+      "minimum": 1,
+      "maximum": 500,
+      "default": 50
+    },
+    "proxyConfiguration": {
+      "title": "Proxy Configuration",
+      "type": "object",
+      "description": "Optional proxy settings.",
+      "editor": "proxy"
+    }
+  },
+  "required": []
+}
